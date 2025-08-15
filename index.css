@@ -133,9 +133,11 @@ section .ent{
 	text-align:center;
 }
 .beg-service p{
-	font-family:chandas;
+	font-family: 'Arial', sans-serif;
 	font-size:20px;
 	color:white;
+	position:relative;
+	top:12px;
 }
 .first-service{
 
@@ -328,6 +330,12 @@ section .ent{
 	position:relative;
 	top:5px;
 }
+.info div div .sub{
+	color:black;
+	position:relative;
+	top:-3px;
+	left:0px;
+}
 .info div  p{
 	position:relative;
 	top:-50px;
@@ -356,4 +364,13 @@ section .ent{
 
 a{
 	text-decoration:none;
+}
+#si{
+	font-size:15px;
+	margin:1px;
+	position:relative;
+	top:-40px;
+}
+.cp{
+	font-family: 'Arial', sans-serif;
 }
