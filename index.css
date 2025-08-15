@@ -94,7 +94,7 @@ body{
 }
 section{
 	width:100vw;
-	height:55vh;
+	height:60vh;
 	background-image:url("images/image.png");
 	background-size: cover; /* ou 'contain' selon vos besoins */
    	background-repeat: no-repeat;
@@ -297,52 +297,28 @@ section .ent{
 	font-size:20px;
 }
 .info{
-	width:80vw;
+	width:60vw;
 	height:auto;
 	background-color:transparent;
 
 }
+
 .info div{
+	width:320px;
+	height:150px;
+	background-color:transparent;
+	margin:2px;
 	display:inline-block;
-	height:50px;
-	width:275px;
-	background-color:green;
-	margin:5px;
-	text-align:center;
-	justify-content:center;
-	cursor:pointer;
-	
-	
 }
-.info div div{
-	 height:40px;
-	 width:40px;
-	 background-color:white;
-	 border-radius:20px;
-	 position:relative;
-	 left:-100px;
-	 justify-content:center;
-	 text-align:center;
-	 
-}
-.info div div .log{
-	width:30px;
-	height:30px;
-	position:relative;
-	top:5px;
-}
-.info div div .sub{
-	color:black;
-	position:relative;
-	top:-3px;
-	left:0px;
-}
-.info div  p{
-	position:relative;
-	top:-50px;
+.info div .pi{
+	display:inline-block;
+	text-align:left;
 	font-family: 'Arial', sans-serif;
-	left:25px;
-	color:white;
+	font-size:14px;
+	position:relative;
+	margin-top:1px;
+	font-weight:bold;
+
 }
 #trs{
 	background-color:skyblue;
@@ -374,4 +350,27 @@ a{
 }
 .cp{
 	font-family: 'Arial', sans-serif;
+	color:black;
+}
+
+#de{
+	position:relative;
+	left:-82px;
+	color:black;
+}
+#de1{
+	position:relative;
+	left:-50px;
+}
+#de2{
+	position:relative;
+	left:-40px;
+}
+#de3{
+	position:relative;
+	left:-64px;
+}
+#bass{
+	position:relative;
+	top:-14px;
 }
