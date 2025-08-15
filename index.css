@@ -1,0 +1,359 @@
+body{
+	justify-content:center;
+	background-color:white;
+}
+/* Reset et styles de base */
+
+
+/* Reset */
+* {
+
+}
+
+/* Navbar de base */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: green;
+    position: relative;
+    height:60px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Menu Burger (masqué par défaut) */
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Version Mobile */
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+    .navbar {
+    	 display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    padding: 1rem 2rem;
+	    background-color: green;
+
+	    height:60px;
+	    width:90%;
+    	position:fixed;
+    	z-index:90;
+    	left:-2.5%;
+    	top:-2.5%;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 70px; /* Ajustez selon la hauteur de votre navbar */
+        left: 0;
+        width: 50%;
+        height: calc(100vh - 70px);
+        background-color: #2c3e50;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in;
+        z-index: 100;
+    }
+    
+    .nav-links.active {
+        transform: translateX(0);
+    }
+   .sect{
+    	position:relative;
+    	top:80px;
+    }
+}
+section{
+	width:100vw;
+	height:55vh;
+	background-image:url("images/image.png");
+	background-size: cover; /* ou 'contain' selon vos besoins */
+   	background-repeat: no-repeat;
+    	background-position: center center; /* centre l'image */
+	position:relative;
+	left:-8px;
+	top:0px;
+}
+section .ent{
+	color:white;
+	font-family: 'Arial', sans-serif;
+	font-size:450%;
+	margin:1%;
+	text-align:left;
+	animation: text 2s linear;
+	
+}
+
+@keyframes text{
+    from {
+      
+        transform: translateX(130px);
+    }
+    to {
+        
+        transform: translateX(0px);
+    }
+}
+.beg-service{
+	width:250px;
+	height:50px;
+	background-color:#c0c0c0;
+	position:relative;
+	top:10px;
+	justify-content:center;
+	text-align:center;
+}
+.beg-service p{
+	font-family:chandas;
+	font-size:20px;
+	color:white;
+}
+.first-service{
+
+	width:auto;
+	height:auto;
+	background-color:transparent;
+	position:relative;
+	top:30px;
+}
+.first-service div{
+	display:inline-block;
+	height:350px;
+	width:300px;
+	background-color:green;
+	margin:4px;
+	
+}
+.first-service div div{
+
+	width:100%;
+	height:170px;
+	background-color:whitesmoke;
+	position:relative;
+	left:-4px;
+	top:-4px;
+	
+}
+.first-service div div .pict1{
+	width:100%;
+	height:100%;
+}
+.present-agro{
+	width:300px;
+	height:50px;
+	background-color:green ;
+	position:relative;
+	top:30px;
+	justify-content:center;
+	text-align:center;
+	
+}
+.present-agro div{
+	height:40px;
+	width:40px;
+	background-color:white;
+	border-radius:20px;
+	position:relative;
+	top:5px;
+	left:5px;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	text-align:center;
+}
+.info div .log{
+	width:30px;
+	height:30px;
+	position:relative;
+	top:5px;
+}
+.present-agro .p1{
+	position:absolute;
+	top:-15px;
+	left:80px;
+	font-family:chandas;
+	font-size:20px;
+	color:white;
+	
+}
+.show-agro{
+	width:80vw;
+	height:auto;
+	background-color:transparent;
+}
+.show-agro div{
+	display:inline-block;
+	height:350px;
+	width:300px;
+	background-color:green;
+	margin:4px;
+
+
+}
+.show-agro div .image{
+	width:100%;
+	height:170px;
+	background-color:whitesmoke;
+	position:relative;
+	left:-4px;
+	top:-4px;
+	
+}.show-agro div .image .pict1{
+	width:100%;
+	height:100%;
+}
+.show-agro div .text{
+	width:90%;
+	height:90px;
+	background-color:transparent;
+	position:relative;
+	left:0px;
+	top:0px;
+	
+}
+.show-agro div .action{
+	width:90%;
+	height:50px;
+	background-color:transparent;
+	position:relative;
+	left:0px;
+	top:0px;
+	
+}
+.show-agro div .action button{
+	border:none;
+	outline:none;
+	border-radius:none;
+	height:40px;
+	width:125px;
+	font-family:chandas;
+	background-color:white;
+	color:green;
+	position:relative;
+	top:5px;
+	font-size:14px;
+	
+}
+.show-agro div .head{
+	width:100%;
+	height:50px;
+	background-color:green;
+	position:relative;
+	left:-4px;
+	top:-4px;
+	
+}
+.show-agro div .head p{
+	font-family: 'Arial', sans-serif;
+	color:white;
+}
+.show-agro div .list p{
+
+	color:black;
+	display:inline-block;
+	font-family: 'Arial', sans-serif;
+}
+.show-agro div .list{
+	width:80%;
+	height:60px;
+	background-color:white;
+	position:relative;
+	justify-content:center;
+	text-align:center;	
+}
+.show-agro div .list .num{
+	font-size:20px;
+}
+.info{
+	width:80vw;
+	height:auto;
+	background-color:transparent;
+
+}
+.info div{
+	display:inline-block;
+	height:50px;
+	width:275px;
+	background-color:green;
+	margin:5px;
+	text-align:center;
+	justify-content:center;
+	cursor:pointer;
+	
+	
+}
+.info div div{
+	 height:40px;
+	 width:40px;
+	 background-color:white;
+	 border-radius:20px;
+	 position:relative;
+	 left:-100px;
+	 justify-content:center;
+	 text-align:center;
+	 
+}
+.info div div .log{
+	width:30px;
+	height:30px;
+	position:relative;
+	top:5px;
+}
+.info div  p{
+	position:relative;
+	top:-50px;
+	font-family: 'Arial', sans-serif;
+	left:25px;
+	color:white;
+}
+#trs{
+	background-color:skyblue;
+
+}
+#obj{
+	background-color:whitesmoke;
+}
+#div-trs{
+	background-color:skyblue;
+}
+#min{
+	height:250px;
+}
+#logit {
+   position:relative;
+   height:100px;
+   width:100px;
+}
+
+a{
+	text-decoration:none;
+}
